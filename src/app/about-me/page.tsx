@@ -1,5 +1,7 @@
 export default function AboutMe() {
-    return (<main>
-        <div>LOL</div>
-    </main>)
+  return (
+    <main>
+      <div>LOL</div>
+    </main>
+  );
 }
