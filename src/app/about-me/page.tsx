@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <main>
+    <main className="">
       <div>LOL</div>
     </main>
   );

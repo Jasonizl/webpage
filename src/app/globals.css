@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* https://www.happyhues.co/palettes/4 */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background: #242629;
+  --heading: #fffffe;
+  --sub-heading: #94a1b2;
+  --container-background: #16161a;
+  --container-heading: #fffffe;
+  --text: #94a1b2;
+  --highlight: #7f5af0;
+  --highlight-secondary: #72757e;
+  --highlight-tertiary: #2cb67d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +29,18 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
 }
